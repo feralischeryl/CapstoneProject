@@ -1,77 +1,94 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title> Yarned Over A Stitch of Fun!!!</title>
-     <link> rel="stylesheet" href="style.css"
-</head>
-
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yarned Over</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <h1>Welcome to Yarned Over</h1>
-            <p>This site offers step-by step instructions on how to create the product pictured  </p>
-        </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#random-projects">Random-Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
     </header>
-    
-
-  
-    <main>
+    <section id="about">
         <div class="container">
-            <section> id-"projects"
-                  <div class = "flip-card">
-                     <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                           <img src="images/fox.jpg" alt="fox">
-        </div>
-        <div class="flip-card-back">
-            <h2>Cute Little Fox</h2>
-            <p>Instructions on how to crochet Project 1...</p>
-           </div>
-        </div>
-     </div>
-   </section>
-   </div>  
-
-   <div class="container">
-    <section> id-"projects"
-          <div class="flip-card">
-             <div class="flie-card-inner">
-                <div class="flip-card-front">
-                   <img src="images/Granny Square.jpg" alt="grannysquare">
-</div>
-<div class="flip-card-back">
-    <h2>Granny Square</h2>
-    <p>Instructions on how to crochet Project 2...</p>
-   </div>
-</div>
-</div>
-</section>
-</div>  
-
-<div class="container">
-    <section> id-"projects"
-          <div class="flip-card">
-             <div class="flip-card-inner">
-                <div class="flip-card-front">
-                   <img src="images/facial.jpg" alt="facial">
-  </div>
-  <div class="flip-card-back">
-      <h2>Facial Scrubbies</h2>
-      <p>Instructions on how to crochet Project 3...</p>
-      </div>
+          <div class="content">  
+        <h1>About</h1>
+      <p>Welcome to Yarned Over! Here at Spittin and Shinning Llama Farm we have
+        so much appreciation for our customers.</p>
+      <p>So much appreciation that we are offering this education site to create
+        projects with the yarn they buy from the farm.</p>
+      <p>The projects range from easy to hard and there is even a randomly
+        generated project as a bonus. Enjoy!</p>
     </div>
+</div>
+    </section>
+
+    <section id="projects">
+      <h1>Projects</h1>
+      <div class="flip-card-container">
+        <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/facial.jpg" alt="facialscrubbies">
+            <h2>Easy Peasy Facial Scrubbies</h2>
+          </div>
+          <div class="flip-card-back">
+            <p>Instructions for the facial scrubbies. First make a slipknot
+              then SC two and DC six into the first stitch.....</p>
+          </div>
+        </div>
       </div>
-        </section>
-            </div>  
-        </main>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/Granny Square.jpg" alt="granny square">
+            <h2>Medium Schmedium Grannies Square</h2>
+          </div>
+          <div class="flip-card-back">
+            <p>Instructions for the grannies square. First make a slipknot then
+              SC 4 and DC 10 in the first stitch.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/fox.jpg" alt="cute fox">
+            <h2>Hard as Lard Fox</h2>
+          </div>
+          <div class="flip-card-back">
+            <p>Instructions for the Fox. First make a slipknot and SC 2 and DC
+              six in the first stitch</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section id="random-projects">
+      <h1>Random Projects</h1>
+      <button id="fetch-projects">Get Random Projects</button>
+      <div id="projects-container"></div>
+    </section>
 
-  <footer>
-    <div class="container">
-        <p>Contact us at: blahblahblah@email.com | Phone: 888-123-4567</p>
-    </div>
-  </footer>
-</body>
+    <footer>
+      <button id="donate-button">Donate</button>
+
+      <section id="contacts"></section>
+      <h1>For more information on these projects or any other questions:
+        Call:859-687-3838 or Email: SandSllamafarm@googleymoogley.com
+      </h1>
+    </footer>
+
+    <script src="yarnedover.js"></script>
+    <script src="api/api.js"></script>
+  </body>
 </html>
